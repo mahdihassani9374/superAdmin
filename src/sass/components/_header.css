@@ -1,0 +1,15 @@
+.header {
+    height: 72px;
+    color: #fff;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    padding-right: 1.5rem;
+    transition: background-color 1s,box-shadow 1s;
+    background-color: rgba(0,0,0,.3);
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+    top: 0;
+    left: 0;
+}
