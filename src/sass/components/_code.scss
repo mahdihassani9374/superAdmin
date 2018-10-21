@@ -5,7 +5,6 @@
 body {
     font-family: IRANSans;
     overflow-x: hidden;
-    background-image: url(../../../images/bg.jpg);
     background-color: #772036;
     color: rgba(255,255,255,.85);
 
@@ -13,5 +12,6 @@ body {
         background-size: 100% 100%;
         background-attachment: fixed;
         background-position: center;
+        background-image: url(../../../images/bg.jpg);
     }
 }
