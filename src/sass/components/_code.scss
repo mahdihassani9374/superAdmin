@@ -1,0 +1,22 @@
+
+* {
+    box-sizing: border-box;
+}
+body {
+    font-family: IRANSans;
+    overflow-x: hidden;
+}
+
+.advertis {
+
+    margin-bottom: 20px;
+    overflow: hidden;
+    clear: both;
+
+    .advertice__img {
+
+        border-radius: 10px;
+        margin:10px auto;
+    }
+}
+
