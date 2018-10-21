@@ -8,4 +8,8 @@
     padding: 15px;
     top: 72px;
     height: calc(100% - 72px);
+
+    @media (max-width: 1199px) {
+        opacity: 0;
+    }
 }
