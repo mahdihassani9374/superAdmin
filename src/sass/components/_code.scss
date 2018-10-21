@@ -5,8 +5,9 @@
 body {
     font-family: IRANSans;
     overflow-x: hidden;
-    background-image: url(./images/bg.jpg);
+    background-image: url(../../../images/bg.jpg);
     background-color: #772036;
+    color: rgba(255,255,255,.85);
 
     @media (min-width: 576px) {
         background-size: 100% 100%;
