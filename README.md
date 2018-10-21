@@ -1,3 +1,3 @@
-# calabin.landing Page
+# Super Admin 
 
-Upload the 'docs' folder in root site
+theme panel admin 
