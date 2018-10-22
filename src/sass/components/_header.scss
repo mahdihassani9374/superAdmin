@@ -5,8 +5,8 @@
     -ms-flex-align: center;
     align-items: center;
     padding: 30px;
-    transition: background-color 1s,box-shadow 1s;
-    background-color: rgba(0,0,0,.3);
+    transition: background-color 1s, box-shadow 1s;
+    background-color: rgba(0, 0, 0, .3);
     position: fixed;
     width: 100%;
     z-index: 100;
@@ -14,21 +14,36 @@
     left: 0;
 
     .header__menu {
-        font-size: 30px;
-        cursor: pointer;
-        transition: all ease 0.3s;
-        opacity: 0;
+
+        display: none;
 
         @media (max-width: 1199px) {
-           opacity: 1;
+            display: block;
         }
 
-        &:hover {
-            opacity: 0.8;
+        i {
+            font-size: 30px;
+            cursor: pointer;
+            transition: all ease 0.3s;
+            opacity: 0;
+
+            @media (max-width: 1199px) {
+                opacity: 1;
+            }
+
+            &:hover {
+                opacity: 0.8;
+            }
         }
+    }
+
+    .header__title {
+        font-weight: 500;
+        font-size: 16px;
+        margin-right: 10px;
     }
 }
 
 .header--scrolled {
-    background-color: rgba(0,0,0,.96);
+    background-color: rgba(0, 0, 0, .96);
 }

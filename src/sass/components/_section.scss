@@ -25,6 +25,14 @@ section.content {
             background-clip: border-box;
             border: 1px solid transparent;
             border-radius: 2px;
+            padding: 15px;
+
+            .content__inner__crad__title {
+                color: #fff;
+                padding-bottom: 10px;
+                border-bottom: 1px solid #ccc;
+                font-weight: 400;
+            }
         }
     }
 
