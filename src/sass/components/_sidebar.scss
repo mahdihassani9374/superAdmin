@@ -25,15 +25,72 @@
         animation: slider ease 0.6s;
         -webkit-animation: slider ease 0.6s;
     }
+
+    .sidebar__user {
+        margin: 10px 0;
+
+
+        .sidebar__user__profile {
+            display: flex;
+            background-color: rgba(255, 255, 255, .06);
+            transition: background-color .3s;
+            height: 70px;
+            -webkit-box-direction: normal;
+            -ms-flex-direction: row;
+            flex-direction: row;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            align-items: center;
+            cursor: pointer;
+            border-radius: 2px;
+            padding: 10px;
+            overflow: hidden;
+
+            &:hover {
+                opacity: 0.8;
+            }
+
+            .sidebar__user__profile__img {
+                border-radius: 50%;
+                height: 50px;
+            }
+
+            .sidebar__user__profile__name {
+                font-weight: 600;
+                margin-right: 10px;
+                font-size: 12px;
+            }
+
+            .sidebar__user__profile__email {
+                color: rgba(255,255,255,.7);
+                margin-right: 10px;
+                font-size: 10px;
+                margin-top: 6px;
+            }
+        }
+    }
 }
 
 @keyframes slider {
-    from {width: 0px;opacity: 0;}
-    to {width: 250px;opacity: 0.8;}
+    from {
+        width: 0px;
+        opacity: 0;
+    }
+
+    to {
+        width: 250px;
+        opacity: 0.8;
+    }
 }
 
 @-webkit-keyframes slider {
-    from {width: 0px;opacity: 0;}
-    to {width: 250px;opacity: .9;}
-}
+    from {
+        width: 0px;
+        opacity: 0;
+    }
 
+    to {
+        width: 250px;
+        opacity: .9;
+    }
+}
