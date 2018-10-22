@@ -1,5 +1,7 @@
 $(function(){
 
+    new WOW().init();
+
     // start menu responsive
 
     $('.header__menu').on('click',function(event){
