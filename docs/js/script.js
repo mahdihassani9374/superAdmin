@@ -29,5 +29,15 @@ $(function(){
             $('.header').removeClass('header--scrolled');
         }
     })
+
+    // show / hide sub menu
+
+    $('.sidebar__navigation__item').on('click',function(event){
+       event.stopPropagation();
+       //var active = $(this).find('.sidebar__navigation__item__link').addClass('active');
+       var subMenu = $(this).find('ul.sidebar__navigation-sub').slideToggle();
+    })
+
+    // show / hide sub menu
     
 })
