@@ -9,6 +9,7 @@
     top: 72px;
     height: calc(100% - 72px);
     z-index: 100;
+    overflow-y: auto;
 
     @media (max-width: 1199px) {
         opacity: 0;

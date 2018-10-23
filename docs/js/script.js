@@ -39,5 +39,18 @@ $(function(){
     })
 
     // show / hide sub menu
+
+    // scroll bar 
+
+    $(".scroll-panel").mCustomScrollbar({
+        scrollButtons:{enable:true,scrollType:"stepped"},
+        keyboard:{scrollType:"stepped"},
+        mouseWheel:{scrollAmount:0,normalizeDelta:true},
+        theme:"rounded-dark",
+        autoExpandScrollbar:true,
+        snapAmount:188,
+        snapOffset:65
+    });
+
     
 })
