@@ -72,4 +72,6 @@ $(function () {
     $('.seperator').each(function (index, el) {
         $(el).text(seperator(el.innerText));
     })
+
+
 })
