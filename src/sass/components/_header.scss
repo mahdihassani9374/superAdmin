@@ -12,6 +12,7 @@
     z-index: 100;
     top: 0;
     left: 0;
+    justify-content: space-between;
 
     .header__menu {
 
@@ -42,7 +43,7 @@
         font-size: 16px;
         margin-right: 10px;
 
-        @media (max-width:767px) {
+        @media (max-width: 767px) {
             display: none;
         }
     }
@@ -50,33 +51,68 @@
     .header__form {
         margin-right: 20px;
 
+        @media (max-width: 767px) {
+            margin-right: 0px;
+        }
+
         .header__form__txt {
-            background-color: rgba(255,255,255,.08);
-            color: rgba(255,255,255,.85);
+            background-color: rgba(255, 255, 255, .08);
+            color: rgba(255, 255, 255, .85);
             border: 0;
             border-radius: 2px;
             outline: 0 !important;
             box-shadow: none !important;
-            transition: background-color .3s,color .3s;
-           
+            transition: background-color .3s, color .3s;
 
-            &:focus , &:focus + .input-group-addon {
-                background-color: rgba(0,0,0,.2);
-                color: rgba(255,255,255,.85);
+
+            &:focus,
+            &:focus+.input-group-addon {
+                background-color: rgba(0, 0, 0, .2);
+                color: rgba(255, 255, 255, .85);
             }
         }
 
-        ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
-            color: rgba(255,255,255,.85);
-          }
+        ::-webkit-input-placeholder {
+            /* Chrome/Opera/Safari */
+            color: rgba(255, 255, 255, .85);
+        }
 
         .input-group-addon {
-            background-color: rgba(255,255,255,.08);
-            color: rgba(255,255,255,.85);
+            background-color: rgba(255, 255, 255, .08);
+            color: rgba(255, 255, 255, .85);
             border: 0;
-            transition: background-color .3s,color .3s;
+            transition: background-color .3s, color .3s;
 
-            
+        }
+    }
+
+    .header__notify {
+        flex-grow: 3;
+        display: flex;
+        justify-content: flex-end;
+
+        .header__notify__item {
+
+            margin-right: 10px;
+            color: #fff;
+            text-decoration: none;
+            position: relative;
+
+            @media (max-width: 767px) {
+                margin-right: 3px;
+            }
+
+            i {
+                font-size: 30px;
+            }
+
+            .header__notify__item__badge {
+                position: absolute;
+                top: -5px;
+                right: -10px;
+                background-color: #9E422D;
+                
+            }
         }
     }
 }
