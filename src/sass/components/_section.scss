@@ -11,13 +11,7 @@ section.content {
         .content__inner__card {
             margin-bottom: 2.3rem;
             box-shadow: 0 1px 5px rgba(0,0,0,.1);
-            height: 300px;
             position: relative;
-            display: -webkit-box;
-            display: -ms-flexbox;
-            display: flex;
-            -webkit-box-orient: vertical;
-            -webkit-box-direction: normal;
             min-width: 0;
             word-wrap: break-word;
             background-color: rgba(0,0,0,.2);
@@ -25,7 +19,7 @@ section.content {
             border: 1px solid transparent;
             border-radius: 2px;
             padding: 15px;
-            align-items: center;
+           
            
             .content__inner__card__count {
                 margin-right: 10px;
@@ -33,12 +27,21 @@ section.content {
                 flex-grow: 2;
             }
 
-            .content__inner__crad__title {
+            .content__inner__card__title {
                 color: #fff;
-                padding-bottom: 10px;
-                border-bottom: 1px solid #581F3A;
-                font-weight: 400;
+                font-weight: 500;
+                display: block;
+                font-size: 13px;
             }
+
+            .content__inner__card__desc {
+                color: #B09EA0;
+                font-weight: 400;
+                display: block;
+                font-size: 13px;
+                margin-top: 10px;
+            }
+
         }
     }
 
