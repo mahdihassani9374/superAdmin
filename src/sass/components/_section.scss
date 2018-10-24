@@ -18,7 +18,6 @@ section.content {
             display: flex;
             -webkit-box-orient: vertical;
             -webkit-box-direction: normal;
-            flex-direction: column;
             min-width: 0;
             word-wrap: break-word;
             background-color: rgba(0,0,0,.2);
@@ -26,6 +25,13 @@ section.content {
             border: 1px solid transparent;
             border-radius: 2px;
             padding: 15px;
+            align-items: center;
+           
+            .content__inner__card__count {
+                margin-right: 10px;
+                text-align: center;
+                flex-grow: 2;
+            }
 
             .content__inner__crad__title {
                 color: #fff;

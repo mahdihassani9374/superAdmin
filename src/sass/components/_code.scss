@@ -7,7 +7,7 @@ body {
     overflow-x: hidden;
     background-color: #772036;
     color: rgba(255,255,255,.85);
-    transition: background .3s;
+    transition: all .3s;
 
     @media (min-width: 576px) {
         background-size: 100% 100%;
@@ -19,4 +19,10 @@ body {
 
 .aside-toggled {
     overflow: hidden;
+}
+
+.seperator {
+    font-family: Mitra;
+    font-weight: bold;
+    font-size: 16px;
 }

@@ -59,4 +59,17 @@ $(function () {
         snapOffset: 65
 
     });
+
+    // seperator 
+
+    // seperator 
+    function seperator(x) {
+        var sep = x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+        console.log(sep);
+        return sep;
+    }
+
+    $('.seperator').each(function (index, el) {
+        $(el).text(seperator(el.innerText));
+    })
 })
