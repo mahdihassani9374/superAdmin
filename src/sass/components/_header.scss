@@ -41,6 +41,43 @@
         font-weight: 500;
         font-size: 16px;
         margin-right: 10px;
+
+        @media (max-width:767px) {
+            display: none;
+        }
+    }
+
+    .header__form {
+        margin-right: 20px;
+
+        .header__form__txt {
+            background-color: rgba(255,255,255,.08);
+            color: rgba(255,255,255,.85);
+            border: 0;
+            border-radius: 2px;
+            outline: 0 !important;
+            box-shadow: none !important;
+            transition: background-color .3s,color .3s;
+           
+
+            &:focus , &:focus + .input-group-addon {
+                background-color: rgba(0,0,0,.2);
+                color: rgba(255,255,255,.85);
+            }
+        }
+
+        ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+            color: rgba(255,255,255,.85);
+          }
+
+        .input-group-addon {
+            background-color: rgba(255,255,255,.08);
+            color: rgba(255,255,255,.85);
+            border: 0;
+            transition: background-color .3s,color .3s;
+
+            
+        }
     }
 }
 
