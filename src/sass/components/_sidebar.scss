@@ -12,13 +12,13 @@
     overflow-y: hidden;
 
     @media (max-width: 1199px) {
-        opacity: 0;
+       display: none;
         background-color: rgba(0, 0, 0, .96);
     }
 
     &.toggled {
         box-shadow: 5px 0 10px rgba(0, 0, 0, .25);
-        opacity:1;
+       display: block;
         -webkit-transform: translate3d(0, 0, 0);
         transform: translate3d(0, 0, 0);
         top: 0;
