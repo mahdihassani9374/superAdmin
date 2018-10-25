@@ -48,3 +48,16 @@ body {
         height: 200px;
     }
 }
+
+#chartdivClock {
+    width: 100%;
+    height: 180px;
+    margin: 10px 0;
+
+    @media (max-width:767px) {
+        display: none;
+    }
+}
+a[href="http://www.amcharts.com"] {
+    display: none !important;
+}
