@@ -65,3 +65,8 @@ a[href="http://www.amcharts.com"] {
 .alert {
     opacity: 0.7;
 }
+
+.alert-dismissable .close, .alert-dismissible .close {
+    right: 20px;
+    top: 0;
+}
