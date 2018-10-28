@@ -65,9 +65,8 @@
         border-radius: 0;
     }
 
-
     .select {
-        
+
         &:before {
             content: "";
             position: absolute;
@@ -87,4 +86,115 @@
         }
 
     }
+}
+
+.custom-control {
+    margin-bottom: 0;
+    min-height: 1.5rem;
+    display: flex;
+    cursor: pointer;
+    margin-bottom: 10px;
+    
+    position: relative;
+
+    .custom-control-input {
+        position: absolute;
+        z-index: -1;
+        opacity: 0;
+
+        &:checked~.custom-control-indicator:before {
+            opacity: 1;
+        }
+    }
+
+    .custom-control-indicator {
+        border-radius: 2px;
+        border: 1px solid rgba(255, 255, 255, .6);
+        color: #fff;
+        top: .03rem;
+        transition: border .2s;
+        position: absolute;
+        right: 0;
+        display: block;
+        width: 13px;
+        height: 13px;
+        pointer-events: none;
+        user-select: none;
+        background-color: transparent;
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: 50% 50%;
+
+        &:before {
+            content: '\f00c';
+            background-color: #fff;
+            font-family: FontAwesome;
+            color: #131313;
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 1;
+            opacity: 0;
+            transition: background-color .2s,opacity .2s;
+            line-height: 1.2rem;
+            text-align: center;
+            font-size: .9rem;
+            font-weight: 700;
+        }   
+    }
+
+    .custom-control-description {
+        margin-right: 20px;
+        font-weight: 400;
+        font-size: 12px;
+    }
+}
+
+.custom-checkbox-inline {
+    display: inline-flex !important;
+    margin-left: 15px;
+}
+
+.custom-radio  {
+    .custom-control-indicator {
+        border-radius: 50%;
+    
+        &:before {
+            border-radius: 50%;
+        }
+    }
+
+    .custom-control-input:checked~.custom-control-indicator:before {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+
+    .custom-control-indicator:before {
+        content: '';
+        position: absolute;
+        left: 2px;
+        top: 2px;
+        width: 9px;
+        height: 9px;
+        border-radius: 50%;
+        background-color: rgba(255,255,255,.9);
+        z-index: 1;
+        -webkit-transform: scale(0);
+        transform: scale(0);
+        transition: -webkit-transform .2s;
+        transition: transform .2s;
+        transition: transform .2s,-webkit-transform .2s;
+    }
+
+    .custom-control-indicator {
+        width: 15px;
+        height: 15px;
+    }
+}
+
+.custome-radio-inline {
+    display: inline-flex !important;
+    margin-left: 15px;
 }
