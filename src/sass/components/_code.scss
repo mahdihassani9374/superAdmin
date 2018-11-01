@@ -139,3 +139,41 @@ hr {
     font-size: 11px;
     font-weight: 500 !important;
 }
+
+.table>thead>tr>th {
+    vertical-align: bottom;
+    border-bottom: 1px solid #fff;
+    font-size: 13px;
+    text-align: center;
+}
+
+.table>tbody>tr>td, .table>tbody>tr>th, .table>tfoot>tr>td, .table>tfoot>tr>th, .table>thead>tr>td, .table>thead>tr>th {
+    padding: 8px;
+    line-height: 1.42857143;
+    vertical-align: top;
+    border-top: 1px solid #dea4a4;
+    font-size: 12px;
+    text-align: center;
+    vertical-align: middle !important;
+}
+
+.action {
+    color: #fff !important;
+    font-size: 18px;
+    text-decoration: none !important;
+    cursor: pointer;
+    transition: all 0.3s;
+
+    i {
+        position: relative;
+        top: 3px;
+    }
+
+    &:hover {
+        color: #dea4a4 !important;
+    }
+}
+
+.table-hover tbody tr:hover, .table-striped tbody tr:nth-of-type(odd) {
+    background-color: rgba(255,255,255,.04);
+}
