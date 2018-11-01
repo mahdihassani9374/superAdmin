@@ -7,7 +7,24 @@ section.content {
 
     .content__inner {
         margin: auto;
-        
+
+        .content__inner__title {
+            color: #fff;
+            margin-bottom: 20px;
+            font-size: 13px;
+            font-weight: 500;
+        }
+
+        .content__inner__desc {
+            color: #fff;
+            background-color: rgba(0,0,0,.2);
+            margin-bottom: 30px;
+            box-shadow: 0 1px 5px rgba(0,0,0,.1);
+            padding: 15px;
+            font-size: 12px;
+            font-weight: 500;
+        }
+
         .content__inner__card {
             margin-bottom: 2.3rem;
             box-shadow: 0 1px 5px rgba(0,0,0,.1);

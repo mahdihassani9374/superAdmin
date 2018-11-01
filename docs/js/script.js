@@ -222,13 +222,14 @@ $(function () {
         sArrow.setValue(12 * date.getSeconds() / 60);
     }
 
-    $(function () {
-        $('.grid').isotope({
-            // set itemSelector so .grid-sizer is not used in layout
-            itemSelector: '.grid__item',
-            originLeft: false,
-            
-        })
+    $('.grid').isotope({
+        // set itemSelector so .grid-sizer is not used in layout
+        itemSelector: '.grid__item',
+        originLeft: false,
+        
     })
+
+    $('.fancybox').fancybox();
+
 
 })

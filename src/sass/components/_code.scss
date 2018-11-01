@@ -68,7 +68,6 @@ hr {
 }
 
 .grid {
-
     .grid__item {
         overflow: hidden;
         margin-bottom: 10px;
@@ -128,4 +127,9 @@ hr {
             }
         }
     }
+}
+
+.fancybox-lock .fancybox-overlay {
+    overflow: hidden !important;
+    overflow-y: hidden !important;
 }
