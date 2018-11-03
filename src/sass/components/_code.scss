@@ -67,11 +67,10 @@ hr {
     border-color:rgba(255,255,255,0.2);
 }
 
-.grid {
-    .grid__item {
+.photo {
+    .photo__item {
         overflow: hidden;
-        margin-bottom: 10px;
-        padding: 0px 4px;
+        margin-bottom: 15px;
 
         a {
             display: block;
