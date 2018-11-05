@@ -236,21 +236,46 @@ hr {
 }
 
 .dataTables-select {
-    padding-right: 40px !important;
+    
     position: relative;
 
-    &:before {
+    &:after {
         content: '\f0c9';
+        position: absolute;
+        top: 5px;
+        right: 0;
         font-family: FontAwesome;
         font-style: normal;
         font-weight: normal;
         text-decoration: inherit;
-        color: #000;
+        color: #d1d1d1;
         font-size: 18px;
         padding-right: 0.5em;
-        position: absolute;
-        top: 10px;
-        left: 0;
+    }
 
+    select.form-control {
+        padding-right: 30px;
     }
 }
+
+.from-txt-search {
+    position: relative;
+    input.form-control {
+      padding-right: 20px;
+    }
+
+    &:after {
+        content: '\f002';
+        position: absolute;
+        top: 5px;
+        right: 0;
+        font-family: FontAwesome;
+        font-style: normal;
+        font-weight: normal;
+        text-decoration: inherit;
+        color: #d1d1d1;
+        font-size: 14px;
+        transform: rotate(90deg);
+    }
+}
+
