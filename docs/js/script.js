@@ -231,5 +231,24 @@ $(function () {
 
     $('.fancybox').fancybox();
 
-
+    $('[data-role="sweet"]').on('click',function(){
+        swal({
+            title: 'حذف آیتم ',
+            text: "ایا مطمئن هستید ؟؟",
+            type: 'warning',
+            showCancelButton: true,
+            confirmButtonColor: '#28a745',
+            cancelButtonColor: '#d33',
+            confirmButtonText: 'بله حذف کن ',
+            cancelButtonText: 'نه منصرف شدم '
+          }).then(function(result) {
+            if (result.value) {
+              swal(
+                'حذف شد ',
+                'عملیات با موفقیت انجام شد',
+                'success'
+              )
+            }
+          })
+    })
 })
