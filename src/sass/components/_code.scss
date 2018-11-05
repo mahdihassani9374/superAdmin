@@ -329,5 +329,16 @@ hr {
 
 
 .swal2-popup {
-    width: 400px;
+    width: 400px !important;
+    padding: 15px !important;
+
+     .swal2-title {
+         font-size: 30px !important;
+     }
+     .swal2-content {
+        font-size: 20px !important;
+     }
+     .swal2-styled.swal2-confirm , .swal2-styled.swal2-cancel {
+        font-size: 16px !important;
+     }
 }
