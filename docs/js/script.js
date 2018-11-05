@@ -251,4 +251,15 @@ $(function () {
             }
           })
     })
+
+    // toastr.options.closeButton = true;
+    // toastr.options.newestOnTop = false;
+    //toastr.options.progressBar = true;
+    toastr.options.rtl = true
+
+    $('[data-role="toaster"]').on('click',function(){
+        toastr.warning('در وارد کردن اطلاغات دقت کنید ');
+        toastr.error('در وارد کردن اطلاغات دقت کنید ');
+        toastr.success('عملیات با موفقیت انجام شد  ');
+    })
 })
